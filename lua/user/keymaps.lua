@@ -7,6 +7,13 @@ local keymap = vim.api.nvim_set_keymap
 
 --Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
+-- map <Esc> to null in insert mode
+keymap("i","<Esc>","<Nop>",opts)
+-- map arrow key to null in insert mode
+keymap("i","<Left>","<Nop>",opts)
+keymap("i","<Right>","<Nop>",opts)
+keymap("i","<Up>","<Nop>",opts)
+keymap("i","<Down>","<Nop>",opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
